@@ -1,6 +1,9 @@
 package payroll.transaction;
 
+import payroll.BankDeposit;
 import payroll.Employee;
+import payroll.Paymaster;
+import payroll.Postal;
 import payroll.payCalculator.CommissionRate;
 import payroll.payCalculator.HourlyRate;
 import payroll.payCalculator.MonthlySalary;
@@ -22,7 +25,7 @@ public class ChangeEmployeeTransaction implements Transaction {
         String action = parts.nextPart();
 
         employee = EmployeeRepositoryInstance.get().getById(empId);
-        if(employee == null)
+        if (employee == null)
             throw new EmployeeNotExist(empId);
 
         if (action.equalsIgnoreCase("Name")) {
@@ -39,6 +42,12 @@ public class ChangeEmployeeTransaction implements Transaction {
             changeUnionMembership(empId);
         } else if (action.equalsIgnoreCase("NoMember")) {
             removeFromUnion(empId);
+        } else if (action.equalsIgnoreCase("Mail")) {
+            changeToMailPaycheck();
+        } else if (action.equalsIgnoreCase("Direct")) {
+            changeToBankDeposit();
+        } else if (action.equalsIgnoreCase("Hold")) {
+            changeToPaymaster();
         } else {
             throw new UnknownChangeAction(action);
         }
@@ -46,18 +55,41 @@ public class ChangeEmployeeTransaction implements Transaction {
         EmployeeRepositoryInstance.get().save(employee);
     }
 
+    private void changeToPaymaster() {
+        employee.payMethod = new Paymaster();
+    }
+
+    private void changeToBankDeposit() {
+        String bank = parts.nextPartWithoutBrackets();
+        String accountNumber = parts.nextPartWithoutBrackets();
+        employee.payMethod = new BankDeposit(bank, accountNumber);
+    }
+
+    private void changeToMailPaycheck() {
+        String postalAddress = parts.nextPartWithoutBrackets();
+        employee.payMethod = new Postal(postalAddress);
+    }
+
     private void removeFromUnion(String empId) {
         UnionMemberships.removeByEmpId(empId);
     }
 
     private void changeUnionMembership(String empId) {
-        checkIfIsAlreadyUnionMember(empId);
+        checkIfEmployeeIsAlreadyUnionMember(empId);
         String memberId = parts.nextPartWithoutBrackets();
+        checkIfMemberIdIsAvailable(memberId);
         validateIfHasDuesText();
         UnionMemberships.addMembership(createUnionMembership(empId, memberId));
     }
 
-    private void checkIfIsAlreadyUnionMember(String empId) {
+    private void checkIfMemberIdIsAvailable(String memberId) {
+        UnionMembership um = UnionMemberships.getByMemberId(memberId);
+        if (um != null)
+            throw new MemberIdAlreadyExist(memberId);
+    }
+
+
+    private void checkIfEmployeeIsAlreadyUnionMember(String empId) {
         UnionMembership um = UnionMemberships.getByEmpId(empId);
         if (um != null)
             throw new EmployeeAlreadyInUnionMember(empId);
@@ -124,6 +156,12 @@ public class ChangeEmployeeTransaction implements Transaction {
     public static class EmployeeAlreadyInUnionMember extends RuntimeException {
         public EmployeeAlreadyInUnionMember(String empId) {
             super("Employee with empId=" + empId + " is already union member");
+        }
+    }
+
+    public class MemberIdAlreadyExist extends RuntimeException {
+        public MemberIdAlreadyExist(String memberId) {
+            super("Union member id=" + memberId + " already exist");
         }
     }
 }

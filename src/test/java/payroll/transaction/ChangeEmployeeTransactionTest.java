@@ -2,7 +2,10 @@ package payroll.transaction;
 
 import org.junit.Before;
 import org.junit.Test;
+import payroll.BankDeposit;
 import payroll.Employee;
+import payroll.Paymaster;
+import payroll.Postal;
 import payroll.payCalculator.CommissionRate;
 import payroll.payCalculator.HourlyRate;
 import payroll.payCalculator.MonthlySalary;
@@ -94,6 +97,14 @@ public class ChangeEmployeeTransactionTest extends TransactionTest {
         transaction.execute("ChgEmp <1> Member <1> Dues <2.99>");
     }
 
+    @Test(expected = ChangeEmployeeTransaction.MemberIdAlreadyExist.class)
+    public void should_throw_ex_when_member_id_already_exist() throws Exception {
+        createUnionMember("1");
+        assertNull(UnionMemberships.getByEmpId("1"));
+        assertNotNull(UnionMemberships.getByMemberId("1"));
+        transaction.execute("ChgEmp <1> Member <1> Dues <2.99>");
+    }
+
     @Test(expected = ChangeActionPartIsMissing.class)
     public void should_throw_ex_when_dues_text_is_missing() throws Exception {
         transaction.execute("ChgEmp <1> Member <1> XXX <2.99>");
@@ -113,6 +124,35 @@ public class ChangeEmployeeTransactionTest extends TransactionTest {
         assertNull(UnionMemberships.getByEmpId("1"));
     }
 
+    @Test
+    public void should_change_to_mail_paycheck() throws Exception {
+        transaction.execute("ChgEmp <1> Mail <MY POSTAL>");
+        Employee employee = EmployeeRepositoryInstance.get().getById("1");
+        assertEquals("MY POSTAL", ((Postal)employee.payMethod).getPostAddress());
+    }
+
+    @Test
+    public void should_change_to_bank_deposit() throws Exception {
+        transaction.execute("ChgEmp <1> Direct <BANK> <1111>");
+        Employee employee = EmployeeRepositoryInstance.get().getById("1");
+        assertEquals("BANK", ((BankDeposit)employee.payMethod).getBank());
+        assertEquals("1111", ((BankDeposit)employee.payMethod).getAccountNumber());
+    }
+
+    @Test
+    public void should_change_to_hold_by_paymaster() throws Exception {
+        transaction.execute("ChgEmp <1> Hold");
+        Employee employee = EmployeeRepositoryInstance.get().getById("1");
+        assertEquals(Paymaster.class, employee.payMethod.getClass());
+    }
+
+    private void createUnionMember(String memberId) {
+        UnionMembership um = new UnionMembership();
+        um.empId = "ANY_ID";
+        um.memberId = memberId;
+        UnionMemberships.addMembership(um);
+    }
+
     private void putEmployeeInUnion() {
         UnionMembership um = new UnionMembership();
         um.empId = "1";
@@ -120,3 +160,4 @@ public class ChangeEmployeeTransactionTest extends TransactionTest {
         UnionMemberships.addMembership(um);
     }
 }
+
