@@ -1,4 +1,4 @@
-package payroll;
+package payroll.entity;
 
 
 public class BankDeposit implements PayMethod {

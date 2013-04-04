@@ -1,4 +1,4 @@
-package payroll;
+package payroll.entity;
 
 public class Paymaster implements PayMethod {
     @Override

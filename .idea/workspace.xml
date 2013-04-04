@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f98c026-41f3-4026-98c3-52fd8939c1ff" name="Default" comment="" />
+    <list default="true" id="0f98c026-41f3-4026-98c3-52fd8939c1ff" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddCommissionedEmployeeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddCommissionedEmployeeTransaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/payroll/transaction/AddCommissionedEmployeeTransactionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddEmployeeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddHourlyEmployeeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddHourlyEmployeeTransaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/payroll/transaction/AddHourlyEmployeeTransactionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeTransaction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/payroll/transaction/AddMonthlyEmployeeTransactionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/Membership.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/Request.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/ChangeEmployeeTransaction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/DelEmployeeTransaction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/EmployeeNotExist.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/InvalidPayCalculator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/PayCalculatorFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/SalesReceiptTransaction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/ServiceChargeTransaction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/TimeCardTransaction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionExecutor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/AddEmployeeTransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/ChangeEmployeeTransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/DelEmployeeTransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/SalesReceiptTransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/ServiceTransactionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/TimeCardTransactionTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/BankDeposit.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/BankDeposit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/Employee.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/PayMethod.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/PayMethod.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/Paymaster.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/Paymaster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/Postal.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/Postal.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/SalesReceipt.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/SalesReceipt.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/payroll/TimeCard.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/entity/TimeCard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddEmployeeTransaction.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/transaction/AddEmployeeTransaction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/payCalculator/CommissionRate.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/payCalculator/CommissionRate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepository.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/payCalculator/HourlyRate.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/payCalculator/HourlyRate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/repository/InMemoryEmployeeRepository.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/repository/InMemoryEmployeeRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/payroll/transaction/TransactionTest.java" afterPath="$PROJECT_DIR$/src/test/java/payroll/transaction/TransactionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/payroll/union/UnionMembership.java" afterPath="$PROJECT_DIR$/src/main/java/payroll/union/UnionMembership.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="UncleBob.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/AddEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364738574682" ignored="false" />
-    <file path="/fragment.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365020128978" ignored="false" />
-    <file path="/AddEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364736987128" ignored="false" />
-    <file path="/Employee.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365019943918" ignored="false" />
+    <file path="/AddEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107061434" ignored="false" />
+    <file path="/fragment.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107619558" ignored="false" />
+    <file path="/AddEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365106607037" ignored="false" />
+    <file path="/Employee.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107883842" ignored="false" />
     <file path="/TimeCard.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364735073952" ignored="false" />
     <file path="/TimeCardRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1363632546092" ignored="false" />
     <file path="/PayCalculator.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364238908285" ignored="false" />
@@ -18,31 +63,31 @@
     <file path="/TransactionParametersSplitter.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364250280629" ignored="false" />
     <file path="/TransactionPartsSplitter.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364249369260" ignored="false" />
     <file path="/Parts.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364250904327" ignored="false" />
-    <file path="/EmployeeRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364733169523" ignored="false" />
+    <file path="/EmployeeRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365022091514" ignored="false" />
     <file path="/CommissionRate.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364739271327" ignored="false" />
     <file path="/PayCalculatorFactory.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364729124589" ignored="false" />
     <file path="/xxx.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364730444648" ignored="false" />
     <file path="/HashMapEmployeeRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364730667383" ignored="false" />
-    <file path="/DelEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364738765825" ignored="false" />
+    <file path="/DelEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100955429" ignored="false" />
     <file path="/EmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364733293024" ignored="false" />
     <file path="/DelEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364733728103" ignored="false" />
-    <file path="/InMemoryEmployeeRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364733202527" ignored="false" />
-    <file path="/TimeCardTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364752102240" ignored="false" />
+    <file path="/InMemoryEmployeeRepository.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100352225" ignored="false" />
+    <file path="/TimeCardTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100576853" ignored="false" />
     <file path="/TransactionExecutor.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364761624617" ignored="false" />
     <file path="/Transaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364735730248" ignored="false" />
     <file path="/MonthlySalary.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364737207319" ignored="false" />
-    <file path="/TimeCardTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364738825752" ignored="false" />
+    <file path="/TimeCardTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100975376" ignored="false" />
     <file path="/SalesReceipt.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364739076903" ignored="false" />
-    <file path="/SalesReceiptTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364751312024" ignored="false" />
-    <file path="/SalesReceiptTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364752070482" ignored="false" />
+    <file path="/SalesReceiptTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365101007808" ignored="false" />
+    <file path="/SalesReceiptTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100553453" ignored="false" />
     <file path="/DateParser.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364752049579" ignored="false" />
     <file path="/ServiceTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364758197201" ignored="false" />
     <file path="/ServiceCharge.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364752949045" ignored="false" />
     <file path="/ServiceChargeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364758176401" ignored="false" />
-    <file path="/UnionMembership.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364757288146" ignored="false" />
+    <file path="/UnionMembership.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365108076905" ignored="false" />
     <file path="/UnionMemberships.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365018393598" ignored="false" />
-    <file path="/ChangeEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365021790641" ignored="false" />
-    <file path="/ChangeEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365021678142" ignored="false" />
+    <file path="/ChangeEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100942668" ignored="false" />
+    <file path="/ChangeEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100479197" ignored="false" />
     <file path="/TransactionParts2.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364762587633" ignored="false" />
     <file path="/TransactionPartsTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364761677866" ignored="false" />
     <file path="/TransactionParts.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1364762409123" ignored="false" />
@@ -50,6 +95,19 @@
     <file path="/Postal.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365020052904" ignored="false" />
     <file path="/Paymaster.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365020088702" ignored="false" />
     <file path="/BankAccount.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365020707660" ignored="false" />
+    <file path="/Dummy.txt" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365099758417" ignored="false" />
+    <file path="/EmployeeImpl.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365100871353" ignored="false" />
+    <file path="/Request.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365105679120" ignored="false" />
+    <file path="/AddHourlyEmployeeRequest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365106454190" ignored="false" />
+    <file path="/AddHourlyEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365106562263" ignored="false" />
+    <file path="/TransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107054507" ignored="false" />
+    <file path="/AddCommissionedEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107328222" ignored="false" />
+    <file path="/AddCommissionedEmployeeRequest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107207633" ignored="false" />
+    <file path="/AddCommissionedEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107460615" ignored="false" />
+    <file path="/AddMonthlyEmployeeTransactionTest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107706031" ignored="false" />
+    <file path="/AddMonthlyEmployeeRequest.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107598520" ignored="false" />
+    <file path="/AddMonthlyEmployeeTransaction.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107687241" ignored="false" />
+    <file path="/Membership.java" changelist="0f98c026-41f3-4026-98c3-52fd8939c1ff" time="1365107985666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +166,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChangeEmployeeTransactionTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/ChangeEmployeeTransactionTest.java">
+      <file leaf-file-name="UnionMembership.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/union/UnionMembership.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="15" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.48264983">
+            <state line="4" column="44" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnionMemberships.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/union/UnionMemberships.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="22" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddCommissionedEmployeeTransactionTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddCommissionedEmployeeTransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="32" selection-start="407" selection-end="407" vertical-scroll-proportion="0.38110748">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddHourlyEmployeeTransactionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddHourlyEmployeeTransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="58" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddMonthlyEmployeeTransactionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddMonthlyEmployeeTransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="33" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="21" selection-start="1353" selection-end="1363" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeRepositoryInstance.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepositoryInstance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InMemoryEmployeeRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/InMemoryEmployeeRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Membership.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/payroll/entity/Membership.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,25 +269,33 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/ServiceTransactionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionParts2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionPartsSplitter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/AddEmployeeTransactionTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/TransactionPartsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionParts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/union/UnionMemberships.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/PayMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/Paymaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/Postal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/BankAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/BankDeposit.java" />
-        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/ChangeEmployeeTransactionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/ChangeEmployeeTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddHourlyEmployeeRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddHourlyEmployeeTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddEmployeeTransaction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/AddHourlyEmployeeTransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddCommissionedEmployeeRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/AddCommissionedEmployeeTransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddCommissionedEmployeeTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/PayCalculatorFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeTransaction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/payroll/transaction/AddMonthlyEmployeeTransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/entity/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/entity/Membership.java" />
+        <option value="$PROJECT_DIR$/src/main/java/payroll/union/UnionMembership.java" />
       </list>
     </option>
   </component>
@@ -159,14 +312,14 @@
     <option name="width" value="1924" />
     <option name="height" value="1057" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -270,6 +423,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="payroll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,10 +550,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UncleBob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UncleBob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="payroll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,30 +602,119 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="payroll.transaction" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="payroll.entity" />
       <recent name="payroll" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="payroll" />
       <recent name="payroll.transaction" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="payroll" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="payroll.transaction" />
       <recent name="payroll" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangeEmployeeTransactionTest">
+  <component name="RunManager" selected="JUnit.payroll.transaction in UncleBob">
+    <configuration default="false" name="AddHourlyEmployeeTransactionTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="UncleBob" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="payroll.transaction" />
+      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddHourlyEmployeeTransactionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AddHourlyEmployeeTransactionTest.should_add_new_hourly_employee" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="UncleBob" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="payroll.transaction" />
+      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddHourlyEmployeeTransactionTest" />
+      <option name="METHOD_NAME" value="should_add_new_hourly_employee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AddCommissionedEmployeeTransactionTest.should_add_new_commissioned_employee" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="UncleBob" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="payroll.transaction" />
+      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddCommissionedEmployeeTransactionTest" />
+      <option name="METHOD_NAME" value="should_add_new_commissioned_employee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AddMonthlyEmployeeTransactionTest.should_add_new_hourly_employee" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="UncleBob" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="payroll.transaction" />
+      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddMonthlyEmployeeTransactionTest" />
+      <option name="METHOD_NAME" value="should_add_new_hourly_employee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="payroll.transaction in UncleBob" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="UncleBob" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -461,100 +737,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="AddEmployeeTransactionTest.should_get_error_message_when_rate_for_hourly_type_is_missing" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="UncleBob" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="payroll.transaction" />
-      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddEmployeeTransactionTest" />
-      <option name="METHOD_NAME" value="should_get_error_message_when_rate_for_hourly_type_is_missing" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TransactionPartsTest.should_get_all_transaction_parts" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="UncleBob" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="payroll.transaction" />
-      <option name="MAIN_CLASS_NAME" value="payroll.transaction.TransactionPartsTest" />
-      <option name="METHOD_NAME" value="should_get_all_transaction_parts" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="AddEmployeeTransactionTest.should_get_error_message_when_employee_id_is_invalid" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="UncleBob" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="payroll.transaction" />
-      <option name="MAIN_CLASS_NAME" value="payroll.transaction.AddEmployeeTransactionTest" />
-      <option name="METHOD_NAME" value="should_get_error_message_when_employee_id_is_invalid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChangeEmployeeTransactionTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="UncleBob" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="payroll.transaction" />
-      <option name="MAIN_CLASS_NAME" value="payroll.transaction.ChangeEmployeeTransactionTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -567,6 +749,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -594,19 +789,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -644,19 +826,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.payroll.transaction in UncleBob" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AddEmployeeTransactionTest.should_get_error_message_when_rate_for_hourly_type_is_missing" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionPartsTest.should_get_all_transaction_parts" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AddEmployeeTransactionTest.should_get_error_message_when_employee_id_is_invalid" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ChangeEmployeeTransactionTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AddHourlyEmployeeTransactionTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AddHourlyEmployeeTransactionTest.should_add_new_hourly_employee" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AddCommissionedEmployeeTransactionTest.should_add_new_commissioned_employee" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AddMonthlyEmployeeTransactionTest.should_add_new_hourly_employee" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.payroll.transaction in UncleBob" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChangeEmployeeTransactionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.payroll.transaction in UncleBob" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AddEmployeeTransactionTest.should_get_error_message_when_employee_id_is_invalid" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionPartsTest.should_get_all_transaction_parts" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AddEmployeeTransactionTest.should_get_error_message_when_rate_for_hourly_type_is_missing" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.payroll.transaction in UncleBob" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AddMonthlyEmployeeTransactionTest.should_add_new_hourly_employee" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AddCommissionedEmployeeTransactionTest.should_add_new_commissioned_employee" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AddHourlyEmployeeTransactionTest.should_add_new_hourly_employee" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AddHourlyEmployeeTransactionTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -704,14 +886,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24546425" sideWeight="0.7236842" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24546425" sideWeight="0.7247807" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2752193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -779,115 +961,125 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/Employee.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/TransactionPartsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/PayMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="4" column="25" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/Postal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/AddMonthlyEmployeeTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+        <state line="14" column="64" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/entity/SalesReceipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/entity/TimeCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="44" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/entity/Membership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="21" selection-start="1353" selection-end="1363" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepositoryInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/InMemoryEmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/payroll/union/UnionMembership.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+        <state line="4" column="44" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/payroll/union/UnionMemberships.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="254" selection-end="267" vertical-scroll-proportion="0.0">
+        <state line="8" column="22" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/payCalculator/PayCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+        <state line="6" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/payCalculator/MonthlySalary.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddHourlyEmployeeTransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+        <state line="17" column="58" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddMonthlyEmployeeTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/payCalculator/HourlyRate.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/AddCommissionedEmployeeTransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/payCalculator/CommissionRate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/AddEmployeeTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/BankDeposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="43" selection-end="43" vertical-scroll-proportion="0.08809135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/Paymaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="36" selection-end="36" vertical-scroll-proportion="0.056782335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/ChangeEmployeeTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="34" selection-start="2767" selection-end="2767" vertical-scroll-proportion="0.26182964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/ServiceChargeTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="219" selection-end="219" vertical-scroll-proportion="0.19873817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/payroll/transaction/TransactionExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="37" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.7381703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/payroll/transaction/ChangeEmployeeTransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="15" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.48264983">
-          <folding />
+        <state line="13" column="32" selection-start="407" selection-end="407" vertical-scroll-proportion="0.38110748">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

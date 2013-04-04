@@ -1,4 +1,4 @@
-package payroll;
+package payroll.entity;
 
 
 import java.util.Date;

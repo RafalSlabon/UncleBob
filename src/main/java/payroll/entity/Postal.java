@@ -1,4 +1,4 @@
-package payroll;
+package payroll.entity;
 
 /**
  * Created with IntelliJ IDEA.

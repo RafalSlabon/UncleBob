@@ -1,6 +1,6 @@
 package payroll.repository;
 
-import payroll.Employee;
+import payroll.entity.Employee;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,11 +12,11 @@ public class InMemoryEmployeeRepository implements EmployeeRepository {
 
     @Override
     public void save(Employee employee) {
-        employees.put(employee.empId, employee);
+        employees.put(employee.getEmpId(), employee);
     }
 
     @Override
-    public Employee getById(String empId) {
+    public Employee getByEmpId(String empId) {
         return employees.get(empId);
     }
 
@@ -26,7 +26,7 @@ public class InMemoryEmployeeRepository implements EmployeeRepository {
     }
 
     @Override
-    public void delete(String empId) {
+    public void deleteByEmdId(String empId) {
         employees.remove(empId);
     }
 }

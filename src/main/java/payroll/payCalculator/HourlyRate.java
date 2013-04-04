@@ -1,7 +1,7 @@
 package payroll.payCalculator;
 
 
-import payroll.TimeCard;
+import payroll.entity.TimeCard;
 
 import java.util.ArrayList;
 import java.util.List;

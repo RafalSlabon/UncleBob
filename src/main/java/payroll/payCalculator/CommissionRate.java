@@ -1,7 +1,7 @@
 package payroll.payCalculator;
 
 
-import payroll.SalesReceipt;
+import payroll.entity.SalesReceipt;
 
 import java.util.ArrayList;
 import java.util.List;
